@@ -30,7 +30,7 @@ int main()
     // percorrendo as linhas da matriz = 3:
     for (int i = 0; i < N_linhas; i++)
     {
-        // percorrendo as colunas da matriz = 3:
+        //! percorrendo as colunas da matriz = 3:
         for (int j = 0; j < N_colunas; j++)
         {
             printf("endereco da matriz[%d][%d]: %p\n", i, j, &matriz[i][j]);
