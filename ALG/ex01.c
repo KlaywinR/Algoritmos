@@ -2,7 +2,7 @@
 int main()
 {
 
-    int a = 5;  // inteiro 
+    int a = 5;  // inteiro NATURAL
     int b = 12; // inteiro natural
     int *p; // ponteiro de p
     int *q;   // ponteiro de q 
