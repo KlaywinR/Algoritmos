@@ -25,3 +25,6 @@ float CalcularArea(int *BaseMaior, int *BaseMenor, int *Altura) {
     area = ((*BaseMaior + *BaseMenor) * (*Altura)) / 2.0;
     return area;
 }
+
+//os valores sao acessados atraves de desreferenciação - onde são passados os endereços das variáveis 
+//acessados por *
