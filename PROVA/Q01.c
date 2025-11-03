@@ -4,13 +4,6 @@ como parâmetro calcArea(int *BMaior, int *BMenor, int *Altura). Fórmula é: Á
 + Base Menor) x Altura) / 2.
 */
 
-int multiplicar(int A, int b) {
-    if (A == 0)
-        return 0;               
-    else
-        return b + multiplicar(A - 1, b);  
-} 
-
 #include <stdio.h>
 int main(){
 
@@ -26,3 +19,15 @@ int main(){
   return 0;
 
 }
+
+/*
+a função chama a si mesma; cada ve que é a chamada soma b aoresultado da proxima chamada.
+a - 1: até chegar no caso base.
+
+*/
+int multiplicar(int A, int b) {
+    if (A == 0)
+        return 0;               
+    else
+        return b + multiplicar(A - 1, b);  
+} 
