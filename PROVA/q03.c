@@ -17,26 +17,34 @@ int main() {
     return 0;
 }
 
-//usada para inverter os caracteres do inicio ao fim:
+//i = f que ambos apontam para o mesmo caractere --> centro
+//i > f: ponteiro cruzado.
+//i >= f: nao ha nada a fazer.
 void RecursivaInverter(char *inicio, char *fim) {
     if (inicio >= fim) {
         return; 
     }
+//troca de caractere:
+/*
+*fim = direita
 
-//trocando todos os carater psiveis:
+*/
+
     char temp = *inicio;
     *inicio = *fim;
     *fim = temp;
 
-//usando a chamada recursiva - para o centro
+//é chamada p separar a parte logica da do usuario
     RecursivaInverter(inicio + 1, fim - 1);
 }
 
 //encontra o fiim da string e chama ela - ponteiro de caracteree
+//fim vai ser usado para achar o último caractere da string.
 void inverter(char *str) {
     char *fim = str;
 
 //vai ate o ultimo cacrtere da palavra
+//ve o valor do caractere - verifica se é o terminador da string.
     while (*(fim + 1) != '\0') {
         fim++;
     }
