@@ -17,6 +17,10 @@ int main() {
     return 0;
 }
 
+/*
+soma do quadrado de i + 1 e a soma do numero atual do laço mais 3
+por ultimo a razao de n é dada por num / denominador.
+ */
 
 
 
