@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// prototipo
+//prototipo
 void RecursivaInverter(char *inicio, char *fim);
 void inverter(char *str);
 
