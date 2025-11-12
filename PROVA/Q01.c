@@ -5,16 +5,15 @@ como parâmetro calcArea(int *BMaior, int *BMenor, int *Altura). Fórmula é: Á
 */
 
 #include <stdio.h>
+
 int main(){
 
  int a, b;
  printf("Por favor, Digite dois numeros naturais:\n");
  scanf("%d %d", &a, &b);
 
- int resultado = multiplicar(a, b);
-   printf("%d * %d = %d\n", a, b, resultado);
-
-    
+ int result = multiply(a, b);
+   printf("%d * %d = %d\n", a, b, result);
 
   return 0;
 
@@ -23,11 +22,11 @@ int main(){
 /*
 a função chama a si mesma; cada ve que é a chamada soma b aoresultado da proxima chamada.
 a - 1: até chegar no caso base.
-
 */
-int multiplicar(int A, int b) {
+
+int multiply(int A, int b) {
     if (A == 0)
         return 0;               
     else
-        return b + multiplicar(A - 1, b);  
+        return b + multiply(A - 1, b);  
 } 
