@@ -6,12 +6,11 @@ def extrair_ips(texto):
     ips_encontrados = re.findall(padrao_ip, texto)
     return ips_encontrados
 
-def validar_senha(senha):
+def validar_senha(senha):  
     senha_padrao = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&]).{8,}$'
     return bool(re.match(senha_padrao, senha))
 
 def limpar_texto(text):
-    
     texto_sem_tags= re.sub(r'<.*?>', '', text)
     texto_sem_urls = re.sub(r'http[s]?://\S+', '', texto_sem_tags)
     texto_limpo = re.sub(r'\s+', ' ', texto_sem_urls).strip()
