@@ -10,5 +10,5 @@ class Solution(object):
                 right -= 1
 
         reverse(0, n - 1)      
-        reverse(0, k - 1)      # inverte os k primeiros
-        reverse(k, n - 1)      # inverte o resto
+        reverse(0, k - 1)      
+        reverse(k, n - 1)       
